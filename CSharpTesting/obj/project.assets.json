@@ -411,6 +411,19 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "CSharpProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "xunit": "2.9.2"
+        },
+        "compile": {
+          "bin/placeholder/CSharpProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CSharpProject.dll": {}
+        }
       }
     }
   },
@@ -932,10 +945,16 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "CSharpProject/1.0.0": {
+      "type": "project",
+      "path": "../CSharpProject.csproj",
+      "msbuildProject": "../CSharpProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CSharpProject >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -973,7 +992,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jeffrey.tang\\Documents\\筆記\\Sample\\CSharpProject\\CSharpProject.csproj": {
+              "projectPath": "C:\\Users\\jeffrey.tang\\Documents\\筆記\\Sample\\CSharpProject\\CSharpProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

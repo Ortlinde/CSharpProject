@@ -1,4 +1,6 @@
-﻿namespace CSharpTesting;
+﻿using CSharpProject;
+
+namespace CSharpTesting;
 
 public class UnitTestProgram
 {

@@ -97,3 +97,10 @@ C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\obj\De
 C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\obj\Debug\net9.0\CSharpTesting.pdb
 C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\obj\Debug\net9.0\CSharpTesting.genruntimeconfig.cache
 C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\obj\Debug\net9.0\ref\CSharpTesting.dll
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\.msCoverageSourceRootsMapping_CSharpTesting
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CoverletSourceRootsMapping_CSharpTesting
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CSharpProject.deps.json
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CSharpProject.runtimeconfig.json
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CSharpProject.exe
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CSharpProject.dll
+C:\Users\jeffrey.tang\Documents\筆記\Sample\CSharpProject\CSharpTesting\bin\Debug\net9.0\CSharpProject.pdb
