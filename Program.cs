@@ -2,9 +2,11 @@
 
 internal class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        CoreCSharpProgramming.ReferenceType.Test();
+        var foreachApp = new Applications.ForeachLoopApplication();
+        await foreachApp.RunAsync();
+
+        // 之後可以在這裡添加其他範例的調用
     }
 }

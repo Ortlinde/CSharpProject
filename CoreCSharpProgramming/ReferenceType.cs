@@ -6,7 +6,6 @@ public class ReferenceType
     {
         object obj = "Hello";
         // Console.WriteLine(obj.Length);  // 編譯錯誤：object沒有Length屬性
-        obj = 123; // 運行時錯誤：InvalidCastException，obj實際上是string
         Console.WriteLine(((string)obj).Length);  // 正確：需要明確轉型
     }
 
