@@ -15,7 +15,7 @@ public class Application
     }
 }
 
-public class ClassTest
+file class ClassTest
 {
     public int value1;
     public int value2;
@@ -26,7 +26,7 @@ public class ClassTest
     }
 }
 
-public struct StructTest
+file struct StructTest
 {
     public int value1;
     public int value2;
