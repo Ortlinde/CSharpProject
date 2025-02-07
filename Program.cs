@@ -4,7 +4,8 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-        TestProgram.Test();
+
+        ClassesInheritance.OverrideFunctionExample.Test();
 
         await Task.Delay(0);
     }
