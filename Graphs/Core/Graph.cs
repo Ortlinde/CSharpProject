@@ -1,8 +1,13 @@
-namespace CSharpProject.Graphs;
+using Graphs.Interfaces;
+using Graphs.Extensions;
+using Graphs.Enums;
+
+namespace Graphs.Core;
 
 public class Graph<T>
 {
     private List<INode<T>> nodes;
+
     private readonly IPathFinder<T> pathFinder;
 
     public Graph(IPathFinder<T>? pathFinder = null)

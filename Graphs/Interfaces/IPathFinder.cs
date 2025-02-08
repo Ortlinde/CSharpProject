@@ -1,4 +1,6 @@
-namespace CSharpProject.Graphs;
+using Graphs.Enums;
+
+namespace Graphs.Interfaces;
 
 public interface IPathFinder<T>
 {

@@ -4,8 +4,7 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-
-        ClassesInheritance.OverrideFunctionExample.Test();
+        StructuredExceptionHandling.FinallyExample.Test();
 
         await Task.Delay(0);
     }

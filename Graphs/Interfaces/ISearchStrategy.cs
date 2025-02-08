@@ -1,4 +1,4 @@
-namespace CSharpProject.Graphs;
+namespace Graphs.Interfaces;
 
 public interface ISearchStrategy<T>
 {

@@ -1,4 +1,6 @@
-namespace CSharpProject.Graphs.Strategies;
+using Graphs.Interfaces;
+
+namespace Graphs.Strategies;
 
 public class DFSStrategy<T> : ISearchStrategy<T>
 {

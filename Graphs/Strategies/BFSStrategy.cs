@@ -1,4 +1,7 @@
-namespace CSharpProject.Graphs.Strategies;
+using Graphs.Interfaces;
+using Graphs.Extensions;
+
+namespace Graphs.Strategies;
 
 public class BFSStrategy<T> : ISearchStrategy<T>
 {

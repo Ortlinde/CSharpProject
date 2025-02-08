@@ -1,4 +1,6 @@
-namespace CSharpProject.Graphs;
+using Graphs.Interfaces;
+
+namespace Graphs.Core;
 
 public class Node<T> : INode<T>
 {

@@ -1,4 +1,6 @@
-namespace CSharpProject.Graphs;
+using Graphs.Interfaces;
+
+namespace Graphs.Extensions;
 
 public static class GraphExtensions
 {

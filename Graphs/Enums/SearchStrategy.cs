@@ -1,4 +1,4 @@
-namespace CSharpProject.Graphs;
+namespace Graphs.Enums;
 
 public enum SearchStrategy
 {

@@ -1,6 +1,11 @@
-namespace CSharpProject.Graphs;
+using Graphs.Interfaces;
+using Graphs.Extensions;
+using Graphs.Enums;
+
+namespace Graphs.Core;
 
 public class PathFinder<T> : IPathFinder<T>
+
 {
     private readonly Dictionary<SearchStrategy, ISearchStrategy<T>> strategies;
 
