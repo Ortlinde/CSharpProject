@@ -4,8 +4,9 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-        StructuredExceptionHandling.FinallyExample.Test();
+        Collections.BoxingAndUnboxingExample.Test();
 
         await Task.Delay(0);
+        Console.WriteLine("程式結束");
     }
 }
