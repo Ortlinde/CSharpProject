@@ -6,6 +6,7 @@ internal class FinalizerExample
     {
         Console.WriteLine("開始測試終結器");
         // 將區塊變為一個獨立的方法
+        static void TestFinalizer() => new FinalizableClass();
         TestFinalizer();
         // 強制進行完整的垃圾回收
         System.Console.WriteLine("第一次垃圾回收");
@@ -22,11 +23,11 @@ internal class FinalizerExample
         Console.WriteLine("第二次垃圾回收完成");
     }
 
-    public static void TestFinalizer()
-    {
-        var finalizableClass = new FinalizableClass();
-        finalizableClass = null;
-    }
+    // public static void TestFinalizer()
+    // {
+    //     var finalizableClass = new FinalizableClass();
+    //     finalizableClass = null;
+    // }
 }
 
 file class FinalizableClass

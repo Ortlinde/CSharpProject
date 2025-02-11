@@ -6,66 +6,29 @@ public class CollectionsExample
 {
     public static void Test()
     {
+        List<int> intList = new List<int>();      // 生成int版本
+        List<double> dblList = new List<double>(); // 生成double版本
 
+        List<string> strList = new List<string>(); // JIT生成機器碼
+        List<object> objList = new List<object>(); // 共享之前的機器碼
+    }
+
+    public static void Test2()
+    {
+        Example example = new Example();
+        int a = 1;
+        int b = 2;
+
+        example.Swap<int>(ref a, ref b);
+
+        example.Swap(ref a, ref b); // <int> 可以省略
     }
 }
 
-file class List<T> : IList<T>
+file class Example
 {
-    public T this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-    public int Count => throw new NotImplementedException();
-
-    public bool IsReadOnly => throw new NotImplementedException();
-
-    public void Add(T item)
+    public void Swap<T>(ref T a, ref T b)
     {
-        throw new NotImplementedException();
-    }
-
-    public void Clear()
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Contains(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void CopyTo(T[] array, int arrayIndex)
-    {
-        throw new NotImplementedException();
-    }
-
-    public IEnumerator<T> GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
-
-    public int IndexOf(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Insert(int index, T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Remove(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void RemoveAt(int index)
-    {
-        throw new NotImplementedException();
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GetEnumerator();
+        (b, a) = (a, b);
     }
 }
-
