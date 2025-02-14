@@ -4,7 +4,6 @@ public unsafe class StackallocExample
 {
     public static void Test()
     {
-
         // 1. 基本使用 - 分配在棧上的整數數組
         Span<int> numbers = stackalloc int[5];
         for (int i = 0; i < 5; i++)
@@ -25,6 +24,25 @@ public unsafe class StackallocExample
         Point* points = stackalloc Point[2];
         points[0] = new Point { X = 1, Y = 1 };
         points[1] = new Point { X = 2, Y = 2 };
+    }
+
+    static int[] nums = [10, 20, 30, 40, 50];
+    public static void Test2()
+    {
+        Span<int> span = nums;
+
+        foreach (var number in nums)
+        {
+            Console.WriteLine(number);
+        }
+
+        span[4] = 100;
+        Console.WriteLine("--------------------------------");
+
+        foreach (var number in nums)
+        {
+            Console.WriteLine(number);
+        }
     }
 
     struct Point

@@ -137,13 +137,13 @@ public class LINQExample
 
     public void OperatorExample4()
     {
+        IEnumerable<string> Names = team.OrderBy(player => player.Name).Select(player => player.Name);
+
         var HPRank =
         from player in team
         orderby player.CurrentHP
         select new { player.Name, player.CurrentHP };
 
-        HPRank = team
-        .OrderByDescending(player => player.CurrentHP)
-        .Select(player => new { player.Name, player.CurrentHP });
+        Dictionary<string, int> HPRankDict = HPRank.ToDictionary(player => player.Name, player => player.CurrentHP);
     }
 }
